@@ -1,5 +1,13 @@
-import React from 'react';
+"use client";
+import { useRouter } from 'next/navigation';
+import React, { useEffect } from 'react';
+import ErrorBoundary from './error';
 
 export default function Home() {
-  return ( <div></div> );
+  const router = useRouter();
+
+  useEffect(() => {
+      router.push("/dashboard");
+  }, [])
+  return ( <ErrorBoundary><div></div></ErrorBoundary> );
 }
