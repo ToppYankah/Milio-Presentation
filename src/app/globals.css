@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Primary Colors */
+    --primary-darkest-color: #BC3612;
+    --primary-dark-color: #E34A13;
+    --primary-color: #F26924;
+    --primary-light-color: #FBD1AD;
+    --primary-lightest-color: #FBD1AD;
+  
+    /* Secondary Colors */
+    --error-color: #F04438;
+    --error-shade-50-color: #FEF3F2;
+    --error-shade-200-color: #FECDCA;
+  
+    --green-color: #087443;
+    --green-shade-50-color: #EDFCF2;
+    --green-shade-200-color: #AAF0C4;
+  
+  
+    /* Grey Colors */
+    --gray-shade-25-color: #FCFCFC;
+    --gray-shade-50-color: #FAFAFA;
+    --gray-shade-100-color: #F4F4F5;
+    --gray-shade-200-color: #E4E4E7;
+    --gray-shade-300-color: #D1D1D6;
+    --gray-shade-400-color: #A0A0AB;
+    --gray-shade-500-color: #70707B;
+    --gray-shade-600-color: #51525C;
+    --gray-shade-700-color: #3F3F46;
+    --gray-shade-800-color: #26272B;
+    --gray-shade-900-color: #18181B;
+  
+      /* Pure Colors */
+      --pure-black-color: #000000;
+      --pure-white-color: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--pure-white-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
