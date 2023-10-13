@@ -143,8 +143,6 @@ const TabItem = ({ label, route } :{label: string, route: string})=>{
     const activeLabelStyle = isActive ? "text-black" : "text-gray-500";
     const tagActiveStyle = isActive ? "bg-black text-white" : "bg-gray-200 text-gray-500";
 
-    console.log("Path Name", pathName, "Route", path, "is Active", isActive);
-
     return <Link href={path} className={`h-16 flex items-center gap-2 ${activeStyle} border-black`}>
     <span className={activeLabelStyle}>{label}</span>
     <span className={`px-2 text-sm rounded-full ${tagActiveStyle}`}>00</span>
